@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=1.0">
+    <title>175超模私人定制会所</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="content">
+    </div>
+    <div class="tab">
+        <ul class="list">
+            <li class="tabItem active" data-bg="img/4.jpg">养生系列<i></i></li>
+            <li class="tabItem" data-bg="img/3.jpg">演绎系列<i></i></li>
+            <li class="tabItem" data-bg="img/2.jpg">定制系列<i></i></li>
+            <li class="tabItem" data-bg="img/1.jpg">古典系列</li>
+        </ul>
+    </div>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script>
+        $(function() {
+            $('.tabItem').click(function() {
+                $(this).siblings('li').removeClass('active');
+                $(this).addClass('active');
+                var str = $(this).attr('data-bg');
+                $('.content').css('background-image', 'url(' + str + ')');
+            })
+        })
+    </script>
+</body>
+
+</html>

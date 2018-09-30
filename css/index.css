@@ -1,0 +1,66 @@
+.content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/4.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.item img {
+    width: 100%;
+}
+
+.tab {
+    z-index: 22;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 8%;
+    height: 2rem;
+    background: url(../img/tab.png) no-repeat;
+    background-size: 100%;
+}
+
+.list {
+    overflow: hidden;
+    height: 1.4rem;
+}
+
+.tabItem {
+    position: relative;
+    float: left;
+    width: 25%;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    text-align: center;
+    color: #f5d78c;
+    font-size: .4rem
+}
+
+.tabItem i {
+    position: absolute;
+    top: .45rem;
+    right: 0;
+    width: .02rem;
+    height: .5rem;
+    background: #f5d78c
+}
+
+.tabItem.active {
+    background: url(../img/ng.png) no-repeat center bottom;
+    background-size: 100%;
+}
